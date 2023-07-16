@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 50%;
+  }
+  
+  .section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centered-content {
+    text-align: center;
+  }
+
+  .score-text {
+    font-size: 250px;
+  }
+
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }

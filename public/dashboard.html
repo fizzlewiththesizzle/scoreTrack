@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        [contenteditable]:focus {
+            outline: none;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h1 id="home-name" contenteditable="true">Home Team</h1>
+            <h1 contenteditable="true" class = "display-1" id="homeScore">0</h1>
+
+            <div class="btn-group btn-group-lg" role="group" aria-label="Home Increment">
+                <button type="button" class="btn btn-primary" onclick="incrementHome()">+1</button>
+                <button type="button" class="btn btn-primary" onclick="incrementHome2()">+2</button>
+                <button type="button" class="btn btn-primary" onclick="incrementHome3()">+3</button>
+            </div>
+
+            <div class="btn-group btn-group-lg" role="group" aria-label="Home Decrement">
+                <button type="button" class="btn btn-secondary" onclick="decrementHome()">-1</button>
+                <button type="button" class="btn btn-secondary" onclick="decrementHome2()">-2</button>
+                <button type="button" class="btn btn-secondary" onclick="decrementHome3()">-3</button>
+            </div>
+          </div>
+          <div class="col">
+            <h1 id="away-name" contenteditable="true">Away Team</h1>
+            <h1 contenteditable="true" class = "display-1" id="awayScore">0</h1>
+
+            <div class="btn-group btn-group-lg" role="group" aria-label="Away Increment">
+                <button type="button" class="btn btn-primary" onclick="incrementAway()">+1</button>
+                <button type="button" class="btn btn-primary" onclick="incrementAway2()">+2</button>
+                <button type="button" class="btn btn-primary" onclick="incrementAway3()">+3</button>
+            </div>
+
+            <div class="btn-group btn-group-lg" role="group" aria-label="Away Decrement">
+                <button type="button" class="btn btn-secondary" onclick="decrementAway()">-1</button>
+                <button type="button" class="btn btn-secondary" onclick="decrementAway2()">-2</button>
+                <button type="button" class="btn btn-secondary" onclick="decrementAway3()">-3</button>
+            </div>
+          </div>
+      </div>
+
+      
+    <button type="button" class="btn btn-danger btn-lg" onclick="resetScore()">Reset</button>
+    <button type="button" class="btn btn-warning btn-lg" onclick="openWindow()">Display</button>
+
+    <br>
+    <br>
+    <input type="file" id="uploadInput">
+    <button onclick="displayImage()">Display Image</button>
+    <img id="uploadedImage" src="#" alt="Uploaded Image" width="300">
+    <button onclick="clearStorage()">Reset Logo</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
+</body>
+</html>
