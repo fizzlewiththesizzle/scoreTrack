@@ -31,7 +31,7 @@
             <h1 id="home-name" contenteditable="true">Home Team</h1>
             <h1 contenteditable="true" class = "display-1" id="homeScore">0</h1>
 
-            <div class="btn-group btn-group-lg" role="group" aria-label="Home Increment">
+            <div class="btn-group btn-group-lg" role="group" aria-label="Home Increment" style="margin-right: 10px;">
                 <button type="button" class="btn btn-primary" onclick="incrementHome()">+1</button>
                 <button type="button" class="btn btn-primary" onclick="incrementHome2()">+2</button>
                 <button type="button" class="btn btn-primary" onclick="incrementHome3()">+3</button>
@@ -47,7 +47,7 @@
             <h1 id="away-name" contenteditable="true">Away Team</h1>
             <h1 contenteditable="true" class = "display-1" id="awayScore">0</h1>
 
-            <div class="btn-group btn-group-lg" role="group" aria-label="Away Increment">
+            <div class="btn-group btn-group-lg" role="group" aria-label="Away Increment" style="margin-right: 10px;">
                 <button type="button" class="btn btn-primary" onclick="incrementAway()">+1</button>
                 <button type="button" class="btn btn-primary" onclick="incrementAway2()">+2</button>
                 <button type="button" class="btn btn-primary" onclick="incrementAway3()">+3</button>
@@ -73,9 +73,9 @@
     </div>
 
     <div id="timer" style="font-size: 72px;">00:00</div>
-    <button id="toggleTimer" onclick="toggleTimer()" class="btn btn-primary btn-lg "><span class="bi bi-play"></span>Start</button>
-    <button onclick="resetTimer()" class="btn btn-danger btn-lg bi bi-arrow-counterclockwise">Reset</button>
-    <button onclick="addMinute()" class="btn btn-success btn-lg bi bi-plus-lg">Add 1 Minute</button>
+    <button id="toggleTimer" onclick="toggleTimer()" class="btn btn-primary btn-lg" style="margin-right: 10px;"><span class="bi bi-play"></span>Start</button>
+    <button onclick="resetTimer()" class="btn btn-danger btn-lg bi bi-arrow-counterclockwise"style="margin-right: 10px;">Reset</button>
+    <button onclick="addMinute()" class="btn btn-success btn-lg bi bi-plus-lg" style="margin-right: 10px;">Add 1 Minute</button>
     <button onclick="changeTime()" class="btn btn-warning btn-lg bi bi-stopwatch">Set Time</button>
 
     <input class="form-control form-control-lg" type="file" id="uploadInput" style="margin-top: 2.5%; margin-bottom: 2.5%;">
