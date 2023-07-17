@@ -5,7 +5,7 @@ html, body {
   
   .container {
     display: flex;
-    height: 50%;
+    height: 30%;
   }
   
   .section {
@@ -26,13 +26,47 @@ html, body {
   .image-section {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align the image to the top */
     justify-content: center;
+    padding-top: 70px; /* Adjust the top padding as desired */
+    padding-bottom: 20px;
   }
   
   .image-section img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 100%; /* Allow the image to take full height within the container */
     width: auto;
     height: auto;
   }
+
+  #display_timer {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px; /* Adjust the font size as needed */
+}
+
+@media (max-width: 768px){
+  .image-section {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1600px){
+  .image-section {
+    padding-top: 20px;
+  }
+  .image-section img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1920px){
+  .image-section {
+    padding-top: 50px;
+  }
+  .image-section img {
+    max-width: 300px;
+  }
+}
