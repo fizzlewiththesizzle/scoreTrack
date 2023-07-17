@@ -202,8 +202,3 @@ function displayImage() {
   function clearStorage(){
     localStorage.clear();
   }
-  
-
-
-  
-
