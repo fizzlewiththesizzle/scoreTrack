@@ -15,7 +15,7 @@ function startTimer() {
   // Start the timer
   timerId = setInterval(updateTimer, 1000);
   isTimerRunning = true;
-  document.getElementById("toggleTimer").textContent = "Pause";
+  document.getElementById("toggleTimer").innerHTML = '<span class="bi bi-pause">Stop</span>';
 }
 
 function updateTimer() {
@@ -35,7 +35,7 @@ function pauseTimer() {
   // Pause the timer
   clearInterval(timerId);
   isTimerRunning = false;
-  document.getElementById("toggleTimer").textContent = "Resume";
+  document.getElementById("toggleTimer").innerHTML = '<span class="bi bi-play">Start</span>';
 }
 
 function resetTimer() {
@@ -45,7 +45,7 @@ function resetTimer() {
   var timerDisplay = document.getElementById("timer");
   timerDisplay.textContent = "00:00";
   isTimerRunning = false;
-  document.getElementById("toggleTimer").textContent = "Start";
+  document.getElementById("toggleTimer").innerHTML = '<span class="bi bi-play">Start</span>';
 }
 
 function addMinute() {
@@ -57,7 +57,7 @@ function addMinute() {
 
 function changeTime() {
   // Change the timer time
-  var newTime = prompt("Enter the new time in MM:SS format:");
+  var newTime = prompt("Enter the time in MM:SS format:");
   if (newTime !== null) {
     var timeParts = newTime.split(":");
     if (timeParts.length === 2) {
