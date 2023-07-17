@@ -176,12 +176,19 @@ function getScore(){
     localStorage.setItem("away_name", awayName);
 }
 
+function getTimer(){
+    var timeElement = document.getElementById('timer');
+    var time = timeElement.innerHTML;
+    localStorage.setItem("time_display", time);
+}
+
 var displayWindow;
 function openWindow(){
     if(displayWindow === undefined || displayWindow.closed){
         displayWindow = window.open("display.html");
     }
     setInterval(getScore, 1000);
+    setInterval(getTimer, 500);
 }
 
 function displayImage() {

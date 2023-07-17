@@ -31,6 +31,8 @@
         </div>
       </div>
 
+      <h1 id="display_timer">00:00</h1>
+
     <script>
         function refreshScore(){
         let homePoints = localStorage.getItem("home_score");
@@ -51,6 +53,14 @@
         console.log("Home: " + homePoints + " | Away: " + awayPoints)
         }
         setInterval(refreshScore, 1000);
+
+        function refreshTimer(){
+          let displayTime = localStorage.getItem("time_display");
+          let timerText = document.getElementById("display_timer");
+          timerText.innerText = displayTime;
+          console.log(displayTime);
+        }
+        setInterval(refreshTimer, 500);
     </script>
 
     <script>
