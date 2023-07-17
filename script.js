@@ -185,7 +185,7 @@ function getTimer(){
 var displayWindow;
 function openWindow(){
     if(displayWindow === undefined || displayWindow.closed){
-        displayWindow = window.open("/display");
+        displayWindow = window.open("display.html");
     }
     setInterval(getScore, 1000);
     setInterval(getTimer, 500);
