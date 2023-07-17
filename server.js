@@ -16,5 +16,7 @@ const port = 3000; // Choose the port number you prefer
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });
+
+module.exports = app;
   
   
